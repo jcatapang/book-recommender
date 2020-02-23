@@ -1,0 +1,7 @@
+Flask>=0.12.2
+gunicorn==19.6.0
+sqlalchemy
+psycopg2
+pandas
+jellyfish
+scikit-learn>=0.18
