@@ -101,7 +101,7 @@ def get_n_recs(book_title, n):
     cosine_scores = pd.Series(get_cosine_similarity(cv_bow, min_score_idx)).sort_values(ascending = False)
 
     # Getting the indices of the n most similar books
-    top_n = list(cosine_scores.iloc[1:n+1].index)
+    top_n = list(cosine_scores.iloc[0:n+1].index)
     
     # Recommending the top n similar titles
     for rec_title in top_n:
