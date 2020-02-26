@@ -1,6 +1,7 @@
 # book-recommender
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)  
 
+## Overview
 The recommender system uses the CMU Book Summary Dataset.<br>
 The recommender system API was developed in Python Flask, hosted in Heroku.<br>
 The webpage backend and frontend was developed in PHP, hosted in 000webhostapp.<br>
@@ -28,3 +29,17 @@ The entire book list can be exported to CSV or XML or just its title column or i
 [5] Get book recommendations from list contents<br>
 ![Recommend books](https://raw.githubusercontent.com/leeseojun17/book-recommender/master/img/rec.jpg)<br>
 A selected book from the list can be asked for recommendations and the top five results would be displayed in a separate section. Each recommendation can be added to the existing book list.
+
+## Getting Started
+### Built with
+*[Python 3.7 or above](https://www.python.org/downloads/) - API via Flask<br>
+*[PHP 7.4 or above](https://www.apachefriends.org/download.html) - Frontend and backend of webpage<br>
+
+### Installing
+To get started, install Python 3.7 and PHP 7.4. Place the files in the proper environments.<br>
+Install the dependencies for Python by running:<br>
+```
+pip install -r requirements.txt
+```
+Setup your own MySQL database. Create a table named `yaraku_tbl` with columns Title, Author, and Groups.<br>
+Update the MySQL credentials in `dbcontroller.php`.<br>
