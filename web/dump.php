@@ -2,6 +2,10 @@
 	require_once("dbcontroller.php");
 	$db_handle = new DBController();
 
+	function save_file($file_url, $file_name) {
+		header('Location: '.$file_url);
+	}
+
 	function export_csv_full() {
 		global $db_handle;
 		$query = "SELECT * FROM `yaraku_tbl`";
@@ -11,7 +15,8 @@
 		foreach($result as $r) {
 			fputcsv($fp, array($r['Title'], $r['Author']));
 		}
-		fclose($fp);
+		$url = "https://yaraku-booklist.000webhostapp.com/yaraku_full.csv";
+		save_file($url, "yaraku_full.csv");
 	}
 
 	function export_xml_full() {
@@ -35,6 +40,8 @@
 		$writer->endElement();
 		$writer->endDocument();
 		$writer->flush();
+		$url = "https://yaraku-booklist.000webhostapp.com/yaraku_full.xml";
+		save_file($url, "yaraku_full.xml");
 	}
 
 	function export_csv_title() {
@@ -46,7 +53,8 @@
 		foreach($result as $r) {
 			fputcsv($fp, array($r['Title']));
 		}
-		fclose($fp);
+		$url = "https://yaraku-booklist.000webhostapp.com/yaraku_titles.csv";
+		save_file($url, "yaraku_titles.csv");
 	}
 
 	function export_xml_title() {
@@ -67,6 +75,8 @@
 		$writer->endElement();
 		$writer->endDocument();
 		$writer->flush();
+		$url = "https://yaraku-booklist.000webhostapp.com/yaraku_titles.xml";
+		save_file($url, "yaraku_titles.xml");
 	}
 
 	function export_csv_author() {
@@ -78,7 +88,8 @@
 		foreach($result as $r) {
 			fputcsv($fp, array($r['Author']));
 		}
-		fclose($fp);
+		$url = "https://yaraku-booklist.000webhostapp.com/yaraku_authors.csv";
+		save_file($url, "yaraku_authors.csv");
 	}
 
 	function export_xml_author() {
@@ -99,5 +110,7 @@
 		$writer->endElement();
 		$writer->endDocument();
 		$writer->flush();
+		$url = "https://yaraku-booklist.000webhostapp.com/yaraku_authors.xml";
+		save_file($url, "yaraku_authors.xml");
 	}
 ?>

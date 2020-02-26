@@ -122,8 +122,8 @@
 				}
 				echo '</select>
 
-				<a href="booklist.php?export=csv_full">CSV</a>
-				<a href="booklist.php?export=xml_full">XML</a>
+				<a href="booklist.php?export=csv_full" target="_blank" download>CSV</a>
+				<a href="booklist.php?export=xml_full" target="_blank" download>XML</a>
 				</form>
 				';
 			}
@@ -141,8 +141,8 @@
 					}
 				}
 				echo '</select>
-				<a href="booklist.php?export=csv_'.$_POST['export_options'].'">CSV</a>
-				<a href="booklist.php?export=xml_'.$_POST['export_options'].'">XML</a>
+				<a href="booklist.php?export=csv_'.$_POST['export_options'].'" target="_blank" download>CSV</a>
+				<a href="booklist.php?export=xml_'.$_POST['export_options'].'" target="_blank" download>XML</a>
 				</form>
 				';
 			}
