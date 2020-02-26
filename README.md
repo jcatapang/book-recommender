@@ -29,7 +29,7 @@ The book list can be filtered into groups/genres. The groups were produced via L
 The entire book list can be exported to CSV or XML or just its title column or its author column.<br>
 [5] Get book recommendations from list contents<br>
 ![Recommend books](https://raw.githubusercontent.com/leeseojun17/book-recommender/master/img/rec.jpg)<br>
-A selected book from the list can be asked for recommendations and the top five results would be displayed in a separate section. Each recommendation can be added to the existing book list.
+A selected book from the list can be asked for recommendations and the top five results would be displayed in a separate section. Each recommendation can be added to the existing book list. The recommendations are obtained via cosine similarity of the vectorized version of bag of words from the summary dataset.
 
 ## Getting Started
 ### Built with
