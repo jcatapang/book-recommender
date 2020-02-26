@@ -1,5 +1,6 @@
 # book-recommender
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)  
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
 
 ## Overview
 The recommender system uses the CMU Book Summary Dataset.<br>
@@ -32,8 +33,8 @@ A selected book from the list can be asked for recommendations and the top five 
 
 ## Getting Started
 ### Built with
-*[Python 3.7 or above](https://www.python.org/downloads/) - API via Flask<br>
-*[PHP 7.4 or above](https://www.apachefriends.org/download.html) - Frontend and backend of webpage<br>
+* [Python 3.7 or above](https://www.python.org/downloads/) - API via Flask<br>
+* [PHP 7.4 or above](https://www.apachefriends.org/download.html) - Frontend and backend of webpage<br>
 
 ### Installing
 To get started, install Python 3.7 and PHP 7.4. Place the files in the proper environments.<br>
