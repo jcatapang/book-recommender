@@ -4,10 +4,10 @@
 
 ## Overview
 The recommender system uses the CMU Book Summary Dataset.<br>
-The recommender system API was developed in Python Flask, hosted in Heroku.<br>
-The webpage backend and frontend was developed in PHP, hosted in 000webhostapp.<br>
+The recommender system API was developed in Python Flask.<br>
+The webpage backend and frontend was developed in PHP.<br>
 The book list is stored in ClearDB MySQL.<br>
-The demo can be accessed here: https://yaraku-booklist.000webhostapp.com/booklist.php<br>
+
 This book recommender system has five main features:<br>
 [1] Add book title to list<br>
 [2] Delete book title from list<br>
